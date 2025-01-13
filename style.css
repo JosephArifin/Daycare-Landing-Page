@@ -1,0 +1,424 @@
+/* --------------- FONTS ---------------- */
+@font-face {
+  font-family: "Open Sauce";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("One Sauce One Light"),
+    url("fonts/OpenSauce/OpenSauceOne-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: Pecita;
+  src:
+    local("Pecita"),
+    url("fonts/Pecita/Pecita.otf") format("opentype");
+}
+
+.alata-regular {
+  font-family: Alata, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ovo-regular {
+  font-family: Ovo, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------- VARIABLES -------------- */
+:root {
+  --main-heading-dark-font-color: #051a39;
+  --h1-font-color: #5699c1;
+  --h2-font-color: #d39e5e;
+  --main-div-color: #eff9fc;
+  --main-p-font-color: #5680a1;
+  --signature-font-color: #7abee0;
+  --banner-div-color: #5680a1;
+  --banner-heading-font-color: #c3b09b;
+  --banner-p-font-color: #eff9fc;
+  --submit-button-color: #8abfd1;
+  --dark-wave-color: #8abfd1;
+  --footer-color: #b19d87;
+  --footer-p-font-color: #eff9fc;
+  --copyright-font-color: #3b4e5d;
+  --label-font-color: #5680a1;
+
+  /* TEXT SHADOWS */
+  --mission-statement-shadow: rgb(5 26 57 / 15%);
+  --h2-shadow: rgb(211 158 94 / 40%);
+}
+
+/* ------------------ FONT USE--------------------*/
+li a,
+#hero-discover,
+h2,
+legend,
+h3 {
+  font-family: Alata;
+}
+
+h1,
+.main-paragraph-text,
+.programs-text,
+label,
+input[type="submit"],
+#copyright-text {
+  font-family: Open Sauce;
+}
+
+#hero-mission-statement {
+  font-family: Ovo;
+  text-shadow: 3px 3px var(--mission-statement-shadow);
+}
+
+#signature {
+  font-family: Pecita;
+  color: var(--signature-font-color);
+}
+
+/* ----------------------- COLORS ---------------------- */
+li a,
+#hero-mission-statement {
+  color: var(--main-heading-dark-font-color);
+}
+
+#hero-discover,
+h2,
+legend {
+  color: var(--h2-font-color);
+}
+
+h2,
+legend {
+  text-shadow: 3px 3px var(--h2-shadow);
+}
+
+.hero,
+#discover,
+#mission-statement,
+#contact {
+  background-color: var(--main-div-color);
+}
+
+h1 {
+  color: var(--h1-font-color);
+}
+
+.main-paragraph-text {
+  color: var(--main-p-font-color);
+}
+
+h3 {
+  color: var(--banner-heading-font-color);
+  text-shadow: 0 0 7px var(--banner-heading-font-color);
+}
+
+.programs-text {
+  color: var(--banner-p-font-color);
+}
+
+.program-types,
+.triangle-down {
+  background-color: var(--banner-div-color);
+}
+
+label {
+  color: var(--label-font-color);
+}
+
+input[type="submit"] {
+  background-color: var(--submit-button-color);
+}
+
+#copyright-text {
+  color: var(--copyright-font-color);
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+
+body {
+  background-image: url("images/background-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 200%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------- HEADER -------------------- */
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 3.875rem;
+  right: 3.375rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+li + li {
+  margin-left: 7.375rem;
+}
+
+.hero {
+  min-width: 100%;
+  height: 24.2rem;
+  margin-top: 21.3125rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding-left: 2rem;
+}
+
+#hero-mission-statement {
+  width: 45rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#hero-discover {
+  width: 45rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h1 {
+  width: 45rem;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-top: 0.3125rem;
+}
+
+#hero-img {
+  width: 50%;
+}
+
+/* ----------- DISCOVER SECTION --------------- */
+.wave {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-wave {
+  background-image: url("./layered-waves-haikei\ \(1\).svg");
+}
+
+.potential {
+  background-image: url("waves/potential.svg");
+}
+
+#discover {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  position: relative;
+}
+
+#discover-content {
+  width: 50%;
+  margin-left: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-paragraph-text {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.main-paragraph-text:first-of-type {
+  margin-top: 0.8rem;
+}
+
+#img-scribbles {
+  width: 30%;
+  align-self: center;
+  margin-top: 6rem;
+  margin-left: 8rem;
+}
+
+/* ------------- MISSION STATEMENT SECTION ------------ */
+#mission-statement {
+  width: 100%;
+  min-height: 18rem;
+}
+
+#mission-statement-content {
+  text-align: right;
+  margin-right: 6rem;
+  padding-top: 2.8rem;
+  width: 88%;
+  margin-left: auto;
+}
+
+/* -------------- OUR PROGRAMS ----------------- */
+.programs {
+  display: flex;
+  flex-direction: row;
+}
+
+#our-programs {
+  width: 25%;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.program-types {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.program-types + .program-types {
+  margin-left: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 0.8rem;
+}
+
+.programs-text {
+  width: 75%;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+#img-programs {
+  width: 30%;
+  margin-top: -18rem;
+  margin-left: 2rem;
+}
+
+.triangle-down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  transform: translateY(-0.5px);
+}
+
+/* Contact Us */
+.contact-wave {
+  background-image: url("waves/2.svg");
+}
+
+#contact {
+  min-height: 20rem;
+}
+
+fieldset {
+  margin-right: 3rem;
+  padding: 1rem;
+  border: none;
+  min-width: 50%;
+  float: right;
+  position: relative;
+}
+
+legend {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#contact-left-side {
+  margin-right: 5rem;
+  position: absolute;
+  top: 0;
+}
+
+#contact-right-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid black;
+  width: 20rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  padding: 1.1rem;
+  border: 1px solid black;
+  width: 20rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+input[type="submit"] {
+  width: 10rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: -12rem;
+}
+
+/* ------------ Footer ----------------- */
+footer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p:first-of-type {
+  font-size: 1.2rem;
+}
+
+#copyright-text {
+  margin-top: 0;
+}
