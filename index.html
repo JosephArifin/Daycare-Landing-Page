@@ -15,28 +15,31 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PROGRAMS</a></li>
-          <li><a href="">CONTACT</a></li>
-        </ul>
-      </nav>
+      <div id="nav">
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#discover">ABOUT</a></li>
+            <li><a href="#programs">PROGRAMS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <section class="hero">
+        <div id="hero-img">
+          <img
+            src="images/home-page-image.png"
+            alt="a group of children drawing on paper with crayons on the floor."
+          />
+        </div>
         <div class="hero-content">
           <p id="hero-mission-statement">
             Empowering the Future, One Child at a Time
           </p>
-          <p id="hero-discover">Discover</p>
+          <p id="hero-discover">DISCOVER</p>
           <h1>Walden Oaks Daycare &amp; Learning Center</h1>
         </div>
-        <img
-          id="hero-img"
-          src="images/home-page-image.png"
-          alt="A group of children drawing on paper with crayons on the floor."
-        />
       </section>
     </header>
 
@@ -68,11 +71,12 @@
           <p id="signature">Walden Oaks</p>
         </div>
 
-        <img
-          id="img-scribbles"
-          src="images/scribbles.png"
-          alt="A blue doodle pattern with stars, suns, rainbows, dots, and funky shapes."
-        />
+        <div id="img-scribbles">
+          <img
+            src="images/scribbles.png"
+            alt="A blue doodle pattern with stars, suns, rainbows, dots, and funky shapes."
+          />
+        </div>
       </section>
 
       <section id="mission-statement">
@@ -89,7 +93,7 @@
         </div>
       </section>
 
-      <section class="programs">
+      <section id="programs">
         <section id="our-programs">
           <h2>OUR PROGRAMS</h2>
           <p class="main-paragraph-text">
@@ -97,47 +101,49 @@
             outdoor activities within our various programs as our facility is
             equipped with a large playground area.
           </p>
+          <div id="img-programs">
+            <img
+              src="images/image-for-programs.png"
+              alt="A child drawing on a piece of paper."
+            />
+          </div>
         </section>
 
-        <section class="program-types">
-          <h3>FULL-TIME PROGRAM</h3>
-          <p class="programs-text">
-            Depending on your family’s schedule, our Full-Time Program might be
-            the right fit for you. No matter what your child needs, each of our
-            programs will provide the support and tools necessary for optimal
-            growth.
-          </p>
-          <div class="triangle-down" aria-hidden="true"></div>
-        </section>
+        <section id="main-programs">
+          <section class="program-types">
+            <h3>FULL-TIME PROGRAM</h3>
+            <p class="programs-text">
+              Depending on your family’s schedule, our Full-Time Program might
+              be the right fit for you. No matter what your child needs, each of
+              our programs will provide the support and tools necessary for
+              optimal growth.
+            </p>
+            <div class="triangle-down" aria-hidden="true"></div>
+          </section>
 
-        <section class="program-types">
-          <h3>HALF-TIME PROGRAM</h3>
-          <p class="programs-text">
-            As our newest and most popular option, our Half-Time Program tends
-            to fill up fast - so if you’re interested, get in touch today to
-            reserve a spot for your child. Feel free to give us a call with any
-            questions!
-          </p>
-          <div class="triangle-down" aria-hidden="true"></div>
-        </section>
+          <section class="program-types">
+            <h3>HALF-TIME PROGRAM</h3>
+            <p class="programs-text">
+              As our newest and most popular option, our Half-Time Program tends
+              to fill up fast - so if you’re interested, get in touch today to
+              reserve a spot for your child. Feel free to give us a call with
+              any questions!
+            </p>
+            <div class="triangle-down" aria-hidden="true"></div>
+          </section>
 
-        <section class="program-types">
-          <h3>SUMMER PROGRAM</h3>
-          <p class="programs-text">
-            Our Summer Program has been perfect for many families. If you have
-            specific questions about day-to-day activities or the program
-            timeline, simply get in touch - one of our team members will be
-            happy to help.
-          </p>
-          <div class="triangle-down" aria-hidden="true"></div>
+          <section class="program-types">
+            <h3>SUMMER PROGRAM</h3>
+            <p class="programs-text">
+              Our Summer Program has been perfect for many families. If you have
+              specific questions about day-to-day activities or the program
+              timeline, simply get in touch - one of our team members will be
+              happy to help.
+            </p>
+            <div class="triangle-down" aria-hidden="true"></div>
+          </section>
         </section>
       </section>
-
-      <img
-        id="img-programs"
-        src="images/image-for-programs.png"
-        alt="A child drawing on a piece of paper."
-      />
 
       <div class="wave contact-wave" aria-hidden="true"></div>
 
@@ -145,30 +151,32 @@
         <form action="" method="post">
           <fieldset>
             <legend>Contact Us</legend>
-            <div id="contact-left-side">
-              <label for="parent">Parent Name:</label><br />
-              <input type="text" id="parent" required />
+            <div id="contact-sides">
+              <div id="contact-left-side">
+                <label for="parent">Parent Name:</label><br />
+                <input type="text" id="parent" required />
 
+                <br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" required />
+
+                <br />
+
+                <label for="phone">Phone Number:</label><br />
+                <input type="tel" id="phone" />
+              </div>
               <br />
 
-              <label for="email">Email:</label><br />
-              <input type="email" id="email" required />
+              <div id="contact-right-side">
+                <label for="child">Child Information:</label><br />
+                <textarea id="child"></textarea>
 
-              <br />
+                <br />
 
-              <label for="phone">Phone Number:</label><br />
-              <input type="tel" id="phone" />
-            </div>
-            <br />
-
-            <div id="contact-right-side">
-              <label for="child">Child Information:</label><br />
-              <textarea id="child"></textarea>
-
-              <br />
-
-              <label for="questions">Questions:</label><br />
-              <textarea id="questions"></textarea>
+                <label for="questions">Questions:</label><br />
+                <textarea id="questions"></textarea>
+              </div>
             </div>
             <br />
 
