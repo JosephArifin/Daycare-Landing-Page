@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Haven Learning</title>
     <link rel="stylesheet" href="style.css" />
@@ -15,16 +15,48 @@
   </head>
   <body>
     <header>
-      <div id="nav">
-        <nav>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="#discover">ABOUT</a></li>
-            <li><a href="#programs">PROGRAMS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
+                fill="black"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li><a href="">HOME</a></li>
+          <li><a href="#discover">ABOUT</a></li>
+          <li><a href="#programs">PROGRAMS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <ul>
+          <li class="hide-on-mobile"><a href="">HOME</a></li>
+          <li class="hide-on-mobile"><a href="#discover">ABOUT</a></li>
+          <li class="hide-on-mobile"><a href="#programs">PROGRAMS</a></li>
+          <li class="hide-on-mobile"><a href="#contact">CONTACT</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
+                fill="black"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
 
       <section class="hero">
         <div id="hero-img">
@@ -35,7 +67,7 @@
         </div>
         <div class="hero-content">
           <p id="hero-mission-statement">
-            Empowering the Future, One Child at a Time
+            Empowering the Future, <br />One Child at a Time
           </p>
           <p id="hero-discover">DISCOVER</p>
           <h1>Walden Oaks Daycare &amp; Learning Center</h1>
@@ -44,7 +76,7 @@
     </header>
 
     <main>
-      <div class="wave potential" aria-hidden="true"></div>
+      <div class="wave top-wave" aria-hidden="true"></div>
       <section id="discover">
         <!-- Decorative div for wave -->
 
@@ -68,6 +100,7 @@
             Oaks, they are fully prepared for the next stage of their young
             lives.
           </p>
+          <br>
           <p id="signature">Walden Oaks</p>
         </div>
 
@@ -150,7 +183,7 @@
       <section id="contact">
         <form action="" method="post">
           <fieldset>
-            <legend>Contact Us</legend>
+            <legend>CONTACT US</legend>
             <div id="contact-sides">
               <div id="contact-left-side">
                 <label for="parent">Parent Name:</label><br />
@@ -188,12 +221,24 @@
 
     <footer>
       <img />
-      <p class="programs-text">
-        3100 W Baker Rd, Baytown, TX 77521, USA (281) 424-5811
-      </p>
-      <p id="copyright-text">&copy;2024 Walden Oaks</p>
-      <img />
-      <img />
+      <div>
+        <p class="footer-text">
+          3100 W Baker Rd, Baytown, TX 77521, USA <br />(281) 424-5811
+        </p>
+        <p id="copyright-text">&copy;2024 Walden Oaks</p>
+      </div>
     </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
