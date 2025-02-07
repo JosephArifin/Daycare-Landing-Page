@@ -223,7 +223,7 @@ h1 {
 }
 
 .top-wave {
-  background-image: url("waves/potential.svg");
+  background-image: url("waves/discover_wave.svg");
 }
 
 #discover {
@@ -372,7 +372,7 @@ h3 {
 
 /* Contact Us */
 .contact-wave {
-  background-image: url("waves/2.svg");
+  background-image: url("waves/contact_wave.svg");
 }
 
 #contact {
