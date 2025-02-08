@@ -215,7 +215,7 @@ h1 {
 .wave {
   aspect-ratio: 900/300;
   max-width: 100%;
-  margin-top: -5%;
+  margin-top: -10%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -368,6 +368,7 @@ h3 {
   background-color: var(--divcolor-navy-blue);
   clip-path: polygon(0 0, 100% 0, 100% 5%, 50% 100%, 0 5%);
   transform: translateY(-2px);
+  z-index: 9999999999;
 }
 
 /* Contact Us */
@@ -378,12 +379,11 @@ h3 {
 #contact {
   background-color: var(--divcolor-white-blue);
   position: relative;
-  z-index: 999999;
 }
 
 fieldset {
   height: 100%;
-  margin-right: 4rem;
+  margin-right: 4%;
   padding: 1rem;
   border: none;
   display: flex;
@@ -466,7 +466,7 @@ footer div {
 footer p {
   text-align: right;
   margin-left: auto;
-  margin-right: 5rem;
+  margin-right: calc(1rem + 4%);
 }
 
 footer p:first-of-type {
@@ -572,7 +572,7 @@ footer p:first-of-type {
 
   #signature {
     margin-bottom: 0;
-    transform: translateY(-2rem);
+    transform: translateY(-3rem);
   }
 
   #mission-statement {
@@ -691,5 +691,13 @@ footer p:first-of-type {
   :root {
     --line-height-sm: 1rem;
     --line-height-md: 1.1rem;
+  }
+
+  .sidebar a {
+    font-size: var(--fs-3xl);
+  }
+
+  .contact-wave {
+    margin-top: 8%;
   }
 }
