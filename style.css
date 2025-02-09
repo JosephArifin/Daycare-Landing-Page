@@ -435,7 +435,7 @@ textarea {
   border: 1px solid black;
   width: 20rem;
   max-width: 20rem;
-  height: 3.73rem;
+  height: 26.8%;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   font-size: var(--fs-lg);
@@ -508,6 +508,10 @@ footer p:first-of-type {
 
   .program-types {
     padding: 0 1%;
+  }
+
+  textarea {
+    height: 26.5%;
   }
 }
 
@@ -661,7 +665,7 @@ footer p:first-of-type {
   textarea {
     width: 12rem;
     max-width: 12rem;
-    height: 3.35rem;
+    height: 26.2%;
   }
 
   footer {
@@ -731,7 +735,7 @@ footer p:first-of-type {
   textarea {
     width: 8rem;
     max-width: 8rem;
-    height: 3.18rem;
+    height: 26%;
   }
 
   footer p:first-of-type {
