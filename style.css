@@ -661,7 +661,7 @@ footer p:first-of-type {
   textarea {
     width: 12rem;
     max-width: 12rem;
-    height: 3.3rem;
+    height: 3.35rem;
   }
 
   footer {
@@ -683,22 +683,37 @@ footer p:first-of-type {
 
 @media screen and (max-width: 580px) {
   :root {
-    --fs-md: 0.5rem;
-    --fs-lg: 0.6rem;
-    --fs-xl: 0.625rem;
-    --fs-2xl: 0.75rem;
-    --fs-3xl: 1rem;
-    --fs-4xl: 1.25rem;
-    --fs-5xl: 2rem;
+    --fs-md: 0.85rem;
+    --fs-lg: 0.95rem;
+    --fs-xl: 1rem;
+    --fs-2xl: 1.1rem;
+    --fs-3xl: 1.5rem;
+    --fs-4xl: 2.1rem;
+    --fs-5xl: 2.4rem;
   }
 
+  /* LINE HEIGHT */
   :root {
-    --line-height-sm: 1rem;
-    --line-height-md: 1.1rem;
+    --line-height-sm: 1.87rem;
+    --line-height-md: 2.04rem;
+    --line-height-lg: 1.5rem;
   }
 
   .sidebar a {
     font-size: var(--fs-3xl);
+  }
+
+  .program-types + .program-types {
+    margin-left: 1.5%;
+  }
+
+  h3 {
+    letter-spacing: 0.1rem;
+  }
+
+  .programs-text {
+    font-size: var(--fs-md);
+    line-height: var(--line-height-lg);
   }
 
   .contact-wave {
@@ -710,12 +725,20 @@ footer p:first-of-type {
   }
 
   input[type="submit"] {
-    width: 6rem;
+    width: 8rem;
   }
 
   textarea {
     width: 8rem;
     max-width: 8rem;
-    height: 2.5rem;
+    height: 3.18rem;
+  }
+
+  footer p:first-of-type {
+    font-size: var(--fs-md);
+  }
+
+  #copyright-text {
+    font-size: var(--fs-xl);
   }
 }
