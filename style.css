@@ -52,6 +52,13 @@
   --shad-gold: rgb(211 158 94 / 40%);
 }
 
+/* HOVER COlORS */
+:root {
+  --fc-transparent-black-blue: #051a3982;
+  --bsubmit-transparent-dark-blue: #8abfd182;
+  --fc-trasparent-black: #00000082;
+}
+
 /* FONT SIZE */
 :root {
   --fs-md: 1rem;
@@ -85,10 +92,32 @@ body {
 }
 
 /* --------------- HEADER -------------------- */
+.logo {
+  width: 10vw;
+  min-width: 3rem;
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+}
+
 nav {
   margin-top: 3.5%;
   margin-bottom: 5%;
   margin-left: 4%;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  height: 100%;
+  padding: 0 3.3rem;
+  text-decoration: none;
+  font-size: var(--fs-2xl);
+  font-family: Alata;
+  color: var(--fc-black-blue);
+  letter-spacing: 0.2rem;
 }
 
 .menu-button {
@@ -134,18 +163,12 @@ nav ul {
   align-items: center;
 }
 
-li {
-  display: inline;
+li a:hover {
+  color: var(--fc-transparent-black-blue);
 }
 
-li a {
-  height: 100%;
-  padding: 0 3.3rem;
-  text-decoration: none;
-  font-size: var(--fs-2xl);
-  font-family: Alata;
-  color: var(--fc-black-blue);
-  letter-spacing: 0.2rem;
+svg:hover {
+  fill: var(--fc-transparent-black-blue);
 }
 
 .hero {
@@ -451,6 +474,11 @@ input[type="submit"] {
   margin-left: auto;
 }
 
+input[type="submit"]:hover {
+  background-color: var(--bsubmit-transparent-dark-blue);
+  color: var(--fc-trasparent-black);
+}
+
 /* ------------ Footer ----------------- */
 footer {
   max-width: 100%;
@@ -459,6 +487,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+footer .logo {
+  min-width: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 footer div {
@@ -518,6 +553,7 @@ footer p:first-of-type {
 /* MOBILE LAYOUT */
 @media screen and (max-width: 864px) {
   /* HEADER */
+
   .hide-on-mobile {
     display: none;
   }
